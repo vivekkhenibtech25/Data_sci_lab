@@ -1,0 +1,45 @@
+# ==========================================
+# GitIgnore for Data Science Lab 1
+# Protects Secrets, API Keys & Scraped Tokens
+# ==========================================
+
+# 1. Environment & Credentials Files
+.env
+.env.*
+*.env
+config.json
+credentials.json
+secrets.json
+settings.ini
+*.pem
+*.key
+*.p12
+*.pkcs12
+id_rsa
+
+# 2. Scraped Web Assets & Embedded Tokens (e.g., Akamai mPulse API keys)
+data/Magicbrick_files/
+data/Magicbrick_files/**
+Magicbrick_files/
+*_files/
+**/*_files/**
+
+# 3. Jupyter Notebook Checkpoints (caches output data/tokens)
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# 4. Python Bytecode & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# 5. OS & IDE Metadata Files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
